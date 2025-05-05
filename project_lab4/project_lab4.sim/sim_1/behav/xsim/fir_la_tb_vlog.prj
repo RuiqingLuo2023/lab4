@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_lab4.srcs/sim_1/imports/sim/caravel.v" \
+"../../../../project_lab4.srcs/sources_1/imports/rtl/fir.v" \
+"../../../../project_lab4.srcs/sim_1/imports/sim/spiflash.v" \
+"../../../../project_lab4.srcs/sources_1/imports/rtl/user_proj_example.v" \
+"../../../../project_lab4.srcs/sources_1/imports/rtl/wb_fir_wrapper.v" \
+"../../../../project_lab4.srcs/sim_1/imports/sim/fir_la_tb_wb_test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
